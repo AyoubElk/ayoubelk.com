@@ -17,7 +17,7 @@ import {
 } from '../utils/i18n';
 
 const GITHUB_USERNAME = 'ayoubelk';
-const GITHUB_REPO_NAME = 'ayoubelk.com';
+const GITHUB_REPO_NAME = 'ayoubelk.github.io';
 const systemFont = `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif`;
@@ -68,21 +68,21 @@ class Translations extends React.Component {
             </span>
           )}
           {lang !== 'en' && (
-            <>
+            <div>
               <br />
               <br />
               {lang !== 'ru' && (
-                <>
+                <div>
                   <Link to={languageLink('en')}>Read the original</Link>
                   {' • '}
                   <a href={editUrl} target="_blank" rel="noopener noreferrer">
                     Improve this translation
                   </a>
                   {' • '}
-                </>
+                </div>
               )}
               <Link to={`/${lang}`}>View all translated posts</Link>{' '}
-            </>
+            </div>
           )}
         </Panel>
       </div>
@@ -131,7 +131,7 @@ class BlogPostTemplate extends React.Component {
       enSlug.length - 1
     )}/index${lang === 'en' ? '' : '.' + lang}.md`;
     const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(
-      `https://ayoubelk.com${enSlug}`
+      `https://ayoubelk.github.io${enSlug}`
     )}`;
 
     return (
@@ -205,7 +205,7 @@ class BlogPostTemplate extends React.Component {
               }}
               to={'/'}
             >
-              ayoubelk.com
+              ayoubelk.github.io
             </Link>
           </h3>
           <Bio />
