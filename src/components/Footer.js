@@ -39,6 +39,10 @@ class Footer extends React.Component {
         >
           stack overflow
         </a>
+        &bull;{' '}
+        <a href="mailto:elkhattabi.ayoub@gmail.com?Subject=Hello" target="_top">
+          contact
+        </a>
       </footer>
     );
   }

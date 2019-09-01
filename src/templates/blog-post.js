@@ -17,7 +17,7 @@ import {
 } from '../utils/i18n';
 
 const GITHUB_USERNAME = 'ayoubelk';
-const GITHUB_REPO_NAME = 'ayoubelk.github.io';
+const GITHUB_REPO_NAME = 'ayoubelk.com';
 const systemFont = `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif`;
@@ -131,7 +131,7 @@ class BlogPostTemplate extends React.Component {
       enSlug.length - 1
     )}/index${lang === 'en' ? '' : '.' + lang}.md`;
     const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(
-      `https://ayoubelk.github.io${enSlug}`
+      `https://ayoubelk.com${enSlug}`
     )}`;
 
     return (
@@ -205,7 +205,7 @@ class BlogPostTemplate extends React.Component {
               }}
               to={'/'}
             >
-              ayoubelk.github.io
+              ayoubelk.com
             </Link>
           </h3>
           <Bio />
