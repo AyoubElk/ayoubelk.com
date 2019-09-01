@@ -56,7 +56,7 @@
     "start": "npm run develop",
     "build": "rm -rf public && rm -rf .cache && gatsby build",
     "now-build": "gatsby build",
-    "deploy": "yarn build && gh-pages -d public -b master ayoubelk.github.io"
+    "deploy": "yarn build"
   },
   "husky": {
     "hooks": {
