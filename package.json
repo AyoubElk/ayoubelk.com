@@ -1,11 +1,11 @@
 {
   "name": "overreacted",
   "private": true,
-  "description": "Overreacted",
+  "description": "Ayoub El khattabi's blog",
   "version": "1.0.0",
-  "author": "Dan Abramov <dan.abramov@me.com>",
+  "author": "Ayoub El Khattabi <elkhattabi.ayoub@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gaearon/overreacted.io/issues"
+    "url": "https://github.com/ayoubelk/ayoubelk.github.io/issues"
   },
   "dependencies": {
     "gatsby": "^2.0.76",
@@ -45,7 +45,7 @@
     "gh-pages": "^1.2.0",
     "prettier": "^1.14.2"
   },
-  "homepage": "https://overreacted.io",
+  "homepage": "https://ayoubelk.github.io",
   "license": "MIT",
   "scripts": {
     "dev": "gatsby develop",
@@ -55,7 +55,7 @@
     "start": "npm run develop",
     "build": "rm -rf public && rm -rf .cache && gatsby build",
     "now-build": "gatsby build",
-    "deploy": "yarn build && cp now.json public/ && cd public && now alias $(now) overreacted.io",
+    "deploy": "yarn build && cp now.json public/ && cd public && now alias $(now) ayoubelk.github.io",
     "dry": "yarn build && cp now.json public/ && cd public && now"
   },
   "husky": {
